@@ -52,6 +52,8 @@ const RiwayatSeminar = React.lazy(() => import('./views/cv/riwayatseminar/Riwaya
 // SKP
 
 const DashboardSKP = React.lazy(() => import('./views/skp/dashboard/Dashboard'));
+const BuatSKP = React.lazy(() => import('./views/skp/buatskp/BuatSkp'));
+
 
 const routes = [
   { path: '/', exact: true, name: 'Home' },
@@ -106,7 +108,9 @@ const routes = [
   { path: '/riwayatseminar',  name: 'Riwayat Seminar', component: RiwayatSeminar },
 
 // SKP
-{ path: '/skp',  name: 'SKP', component: DashboardSKP }
+{ path: '/skp',  name: 'SKP', component: DashboardSKP },
+{ path: '/buatskp',  name: 'Buat SKP', component: BuatSKP }
+
 
 
 ];

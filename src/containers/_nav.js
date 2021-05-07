@@ -79,7 +79,7 @@ const _nav =  [
       {
         _tag: 'CSidebarNavItem',
         name: 'Buat SKP',
-        to: '/buttons/brand-buttons',
+        to: '/buatskp',
       },
       {
         _tag: 'CSidebarNavItem',
