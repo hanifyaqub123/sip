@@ -84,12 +84,12 @@ const _nav =  [
       {
         _tag: 'CSidebarNavItem',
         name: 'Realisasi SKP Harian',
-        to: '/buttons/button-groups',
+        to: '/skpharian',
       },
       {
         _tag: 'CSidebarNavItem',
         name: 'Realisasi SKP Bulanan',
-        to: '/buttons/button-dropdowns',
+        to: '/skpbulanan',
       },
       {
         _tag: 'CSidebarNavItem',

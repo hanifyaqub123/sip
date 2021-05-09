@@ -53,6 +53,11 @@ const RiwayatSeminar = React.lazy(() => import('./views/cv/riwayatseminar/Riwaya
 
 const DashboardSKP = React.lazy(() => import('./views/skp/dashboard/Dashboard'));
 const BuatSKP = React.lazy(() => import('./views/skp/buatskp/BuatSkp'));
+const SkpHarian = React.lazy(() => import('./views/skp/skpharian/SkpHarian'));
+const SkpBulanan = React.lazy(() => import('./views/skp/skpbulanan/SkpBulanan'));
+const PilihSkp = React.lazy(() => import('./views/skp/pilihskp/PilihSkp'));
+
+
 
 
 const routes = [
@@ -109,7 +114,12 @@ const routes = [
 
 // SKP
 { path: '/skp',  name: 'SKP', component: DashboardSKP },
-{ path: '/buatskp',  name: 'Buat SKP', component: BuatSKP }
+{ path: '/buatskp',  name: 'Buat SKP', component: BuatSKP },
+{ path: '/skpharian',  name: 'SKP Harian', component: SkpHarian},
+{ path: '/skpbulanan',  name: 'SKP Bulanan', component: SkpBulanan},
+{ path: '/pilihskp',  name: 'Pilih SKP', component: PilihSkp},
+
+
 
 
 
