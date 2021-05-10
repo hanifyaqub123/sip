@@ -9,13 +9,15 @@ import {
     CInput,
     CFormGroup,
     CButton,
-    CSpinner
+    CSpinner,
+    CButtonToolbar
   } from '@coreui/react'
 
 import axios from 'axios';
 
 
 const SkpHarian = () =>{
+     const history = useHistory();
     const [loading,setLoading] = useState(true)
     const [inputList, setInputList] = useState([{nik:'123',tanggal:tanggal,nama_lengkap:'Muhammad',status:'Pending'}]);
     const [tanggal,setTanggal] = useState('');
@@ -139,7 +141,13 @@ const handlleSimpan = e =>{
     
       <CButton
        onClick={handlleSimpan} 
-      style={{marginRight:'67.5%',marginBottom:'2%'}}  color="primary" className="px-4">Simpan</CButton>
+      style={{marginRight:'67.5%',marginBottom:'5%'}}  color="primary" className="px-4">Simpan</CButton>
+      
+      <h3>Kegiatan Tambahan</h3>
+      <CButtonToolbar style={{paddingTop:20,paddingBottom:20}} justify="start">
+        <CButton onClick={()=>history.push("/skptambahan")} style={{marginRight:10}} color="success">Input Tugas Tambahan</CButton>
+        <CButton onClick={()=>history.push("/skplainlain")} style={{marginRight:10}} color="info">Input Tugas Lain-Lain</CButton>
+    </CButtonToolbar>
       </CContainer>
     
     )

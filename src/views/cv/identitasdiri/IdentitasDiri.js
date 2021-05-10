@@ -6,11 +6,12 @@ import {
   CFormGroup,
   CLabel,
   CInput,
-  CFormText,
+  CCard,
   CButton,
   CButtonToolbar,
 } from "@coreui/react";
 import axios from "axios";
+import profile from '../../../assets/profile.png'
 
 const IdentitasDiri = () => {
   const [nik, setNik] = useState("");
@@ -92,12 +93,13 @@ const IdentitasDiri = () => {
   };
   return (
     <div>
+       <CCard style={{padding:20}}>
       <div style={{ textAlign: "center", marginBottom: "2%" }}>
         <div>
           <img
             alt="Foto Profile"
             // src={user[0].img}
-            src="https://lh3.googleusercontent.com/proxy/dxxJ2z_3id7nR7yrWoMw4p-3FBVrH4Z4rO9Kxie-dihygqdDL-TmVYoh6713VOLwetuO6XODAcY2E1O6V0MobZQ7m95M718d1oW-64MA0rQZaoQlUsoPiE5E6j99"
+            src={profile}
             style={{
               width: 250,
               height: 200,
@@ -337,6 +339,7 @@ const IdentitasDiri = () => {
           </CCol>
         </CRow>
       </CContainer>
+      </CCard>
     </div>
   );
 };

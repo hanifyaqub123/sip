@@ -31,26 +31,39 @@ import {
                 <table>
   <tr>
     <th style={{width:'3%',textAlign:'center'}} rowSpan="2">No</th>
-    <th style={{width:'20%',textAlign:'center'}}rowSpan="2">Kegiatan Tugas</th>
+    <th style={{width:'20%',textAlign:'center'}}rowSpan="2">Uraian Tugas</th>
     <th style={{width:'20%',textAlign:'center'}} colSpan="3">Target</th>
+    <th style={{width:'20%',textAlign:'center'}} colSpan="3">Realisasi</th>
 
   </tr>
   <tr>
-    <th style={{width:'20%',backgroundColor:'#ffffff',textAlign:'center'}}>Tempat Lahir</th>
-    <th style={{width:'20%',backgroundColor:'#ffffff',textAlign:'center'}}>Tanggal Lahir</th>
-    <th style={{width:'20%',backgroundColor:'#ffffff',textAlign:'center'}}>Jenis Kelamin</th>
+    <th style={{width:'20%',backgroundColor:'#ffffff',textAlign:'center'}}>Kuantitas</th>
+    <th style={{width:'20%',backgroundColor:'#ffffff',textAlign:'center'}}>Kualitas</th>
+    <th style={{width:'20%',backgroundColor:'#ffffff',textAlign:'center'}}>Waktu</th>
+    <th style={{width:'20%',backgroundColor:'#ffffff',textAlign:'center'}}>Kuantitas</th>
+    <th style={{width:'20%',backgroundColor:'#ffffff',textAlign:'center'}}>Kualitas</th>
+    <th style={{width:'20%',backgroundColor:'#ffffff',textAlign:'center'}}>Waktu</th>
   </tr>
+  
 
   <tr>
     <th>1</th>
-    <th>Coba</th>
-    <th>Tempat Lahir</th>
-    <th>Tanggal Lahir</th>
-    <th>Jenis Kelamin</th>
+    <th>0</th>
+    <th>0</th>
+    <th>0</th>
+    <th>0</th>
+    <th>0</th>
+    <th>0</th>
+    <th>0</th>
 
   </tr>
  
 </table>
+
+<CButtonToolbar style={{paddingTop:20,paddingBottom:20}} justify="end">
+        <CButton style={{marginRight:10}} color="success">Kirim Atasan</CButton>
+        <CButton style={{marginRight:10}} color="info">Cetak</CButton>
+    </CButtonToolbar>
 </CCard>
           </CContainer>
       )

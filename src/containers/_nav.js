@@ -94,40 +94,40 @@ const _nav =  [
       {
         _tag: 'CSidebarNavItem',
         name: 'Nilai SKP',
-        to: '/buttons/button-dropdowns',
+        to: '/nilaiskp',
       },
       {
         _tag: 'CSidebarNavItem',
         name: 'Nilai Perilaku',
-        to: '/buttons/button-dropdowns',
+        to: '/nilaiperilaku',
       },
       {
         _tag: 'CSidebarNavItem',
         name: 'Nilai Prestasi Kerja',
-        to: '/buttons/button-dropdowns',
+        to: '/nilaiprestasikerja',
       },
       {
         _tag: 'CSidebarNavItem',
         name: 'History',
-        to: '/buttons/button-dropdowns',
+        to: '/history',
       }
     ],
   },
   {
     _tag: 'CSidebarNavDropdown',
     name: 'Cuti',
-    route: '/icons',
+    route: '/cuti',
     icon: 'cil-star',
     _children: [
       {
         _tag: 'CSidebarNavItem',
         name: 'Buat Cuti',
-        to: '/icons/coreui-icons',
+        to: '/buatcuti',
       },
       {
         _tag: 'CSidebarNavItem',
         name: 'Daftar Cuti',
-        to: '/icons/flags',
+        to: '/daftarcuti',
       },
     ],
   },

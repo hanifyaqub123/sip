@@ -6,7 +6,7 @@ import {
     CFormGroup,
     CLabel,
     CInput,
-    CFormText,
+    CCard,
     CButton,
     CButtonToolbar,
   } from "@coreui/react";
@@ -15,6 +15,8 @@ import {
   const RiwayatKontrak = () =>{
       return(
     <CContainer>
+                   <CCard style={{padding:20}}>
+
         <CButtonToolbar justify="end">
         <CButton style={{marginRight:10}} color="success">Tambah</CButton>
         <CButton style={{marginRight:10}} color="info">Ubah</CButton>
@@ -44,6 +46,7 @@ import {
         </CCol>
         
       </CRow>
+      </CCard>
     </CContainer>
       )
   }

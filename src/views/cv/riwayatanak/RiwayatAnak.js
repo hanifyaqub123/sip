@@ -9,12 +9,15 @@ import {
     CFormText,
     CButton,
     CButtonToolbar,
+    CCard
   } from "@coreui/react";
   import axios from "axios";
 
   const RiwayatAnak = () =>{
       return(
     <CContainer>
+             <CCard style={{padding:20}}>
+
         <CButtonToolbar justify="end">
         <CButton style={{marginRight:10}} color="success">Tambah</CButton>
         <CButton style={{marginRight:10}} color="info">Ubah</CButton>
@@ -49,6 +52,7 @@ import {
         </CCol>
         
       </CRow>
+      </CCard>
     </CContainer>
       )
   }

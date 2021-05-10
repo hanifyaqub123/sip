@@ -56,6 +56,16 @@ const BuatSKP = React.lazy(() => import('./views/skp/buatskp/BuatSkp'));
 const SkpHarian = React.lazy(() => import('./views/skp/skpharian/SkpHarian'));
 const SkpBulanan = React.lazy(() => import('./views/skp/skpbulanan/SkpBulanan'));
 const PilihSkp = React.lazy(() => import('./views/skp/pilihskp/PilihSkp'));
+const SkpTugasTambahan = React.lazy(() => import('./views/skp/skptambahan/SkpTugasTambahan'));
+const SkpLainLain = React.lazy(() => import('./views/skp/skplainlain/SkpLainLain'));
+const NilaiSkp = React.lazy(() => import('./views/skp/nilaiskp/NilaiSkp'));
+const NilaiPerilaku = React.lazy(() => import('./views/skp/nilaiperilaku/NilaiPerilaku'));
+const NilaiPrestasiKerja = React.lazy(() => import('./views/skp/nilaiprestasikerja/NilaiPrestasiKerja'));
+const History = React.lazy(() => import('./views/skp/history/History'));
+
+// Cuti
+const BuatCuti = React.lazy(() => import('./views/cuti/buatcuti/BuatCuti'));
+const DaftarCuti = React.lazy(() => import('./views/cuti/daftarcuti/DaftarCuti'));
 
 
 
@@ -118,9 +128,16 @@ const routes = [
 { path: '/skpharian',  name: 'SKP Harian', component: SkpHarian},
 { path: '/skpbulanan',  name: 'SKP Bulanan', component: SkpBulanan},
 { path: '/pilihskp',  name: 'Pilih SKP', component: PilihSkp},
+{ path: '/skptambahan',  name: 'SKP Tambahan', component: SkpTugasTambahan},
+{ path: '/skplainlain',  name: 'SKP Lain Lain', component: SkpLainLain},
+{ path: '/nilaiskp',  name: 'Nilai SKP', component: NilaiSkp},
+{ path: '/nilaiperilaku',  name: 'Nilai Perilaku', component: NilaiPerilaku},
+{ path: '/nilaiprestasikerja',  name: 'Nilai Prestasi Kerja', component: NilaiPrestasiKerja},
+{ path: '/history',  name: 'History', component: History},
 
-
-
+// Cuti
+{ path: '/buatcuti',  name: 'Buat Cuti', component: BuatCuti},
+{ path: '/daftarcuti',  name: 'Daftar Cuti', component: DaftarCuti},
 
 
 ];
